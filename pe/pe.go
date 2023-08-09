@@ -6,7 +6,10 @@ import (
 )
 
 const (
-	IMAGE_DOS_SIGNATURE = 0x5A4D
+	IMAGE_DOS_SIGNATURE         = 0x5A4D
+	IMAGE_PE_SIGNATURE          = 0x4550
+	IMAGE_SIZEOF_FILE_HEADER    = 20
+	IMAGE_SIZEOF_SECTION_HEADER = 40
 )
 
 type PE32 struct {
@@ -41,7 +44,8 @@ type IMAGE_OPTIONAL_HEADER struct {
 	ImageBase           int32
 	SectionAlignment    int32
 	FileAlignment       int32
-	DataDirectory       []*IMAGE_DATA_DIRECTORY
+	SizeOfHeader        int32
+	DataDirectoryArray  []*IMAGE_DATA_DIRECTORY
 }
 
 // 数据目录项
@@ -57,13 +61,13 @@ type IMAGE_SECTION_HEADER struct {
 	VisualAddress    int32 //节区的RVA
 	SizeOfRawData    int32
 	PointerToRawData int32 //节区的文件偏移
-	Characteristics  int32
+	Characteristics  uint32
 }
 
 type IMAGE_HEADER struct {
-	DosHeader     *IMAGE_DOS_HEADER
-	PEHeader      *IMAGE_NT_HEADER
-	SectionHeader *IMAGE_SECTION_HEADER
+	DosHeader      *IMAGE_DOS_HEADER
+	PEHeader       *IMAGE_NT_HEADER
+	SectionHeaders []*IMAGE_SECTION_HEADER
 }
 
 // NewPE32返回一个PE32对象，并初始化其文件名
