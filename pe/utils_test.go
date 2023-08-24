@@ -19,8 +19,8 @@ func Test_RAV2FOA(t *testing.T) {
 	}
 
 	for _, ex := range expected {
-		if p.RAV2FOA(ex.Rva) != ex.Foa {
-			t.Errorf("wrong FOA, expected: %x, got: %x\n", ex.Foa, p.RAV2FOA(ex.Rva))
+		if p.RVA2FOA(ex.Rva) != ex.Foa {
+			t.Errorf("wrong FOA, expected: %x, got: %x\n", ex.Foa, p.RVA2FOA(ex.Rva))
 		}
 	}
 }

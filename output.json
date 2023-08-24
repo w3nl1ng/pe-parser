@@ -1,0 +1,770 @@
+{
+	"filename": ".\\example\\example.exe",
+	"header": {
+		"dosHeader": {
+			"magic": 23117,
+			"lfanew": 256
+		},
+		"ntHeader": {
+			"signature": 0,
+			"fileHeader": {
+				"numberOfSection": 5,
+				"sizeOfOptionalHeader": 224
+			},
+			"optionalHeader": {
+				"addressOfEntryPoint": 4773,
+				"imageBase": 4194304,
+				"sectionAlignment": 4096,
+				"fileAlignment": 512,
+				"sizeOfHeader": 1024,
+				"dataDirectoryArray": [
+					{
+						"rva": 0,
+						"size": 0
+					},
+					{
+						"rva": 9596,
+						"size": 160
+					},
+					{
+						"rva": 16384,
+						"size": 480
+					},
+					{
+						"rva": 0,
+						"size": 0
+					},
+					{
+						"rva": 0,
+						"size": 0
+					},
+					{
+						"rva": 20480,
+						"size": 348
+					},
+					{
+						"rva": 8464,
+						"size": 112
+					},
+					{
+						"rva": 0,
+						"size": 0
+					},
+					{
+						"rva": 0,
+						"size": 0
+					},
+					{
+						"rva": 0,
+						"size": 0
+					},
+					{
+						"rva": 8576,
+						"size": 64
+					},
+					{
+						"rva": 0,
+						"size": 0
+					},
+					{
+						"rva": 8192,
+						"size": 196
+					},
+					{
+						"rva": 0,
+						"size": 0
+					},
+					{
+						"rva": 0,
+						"size": 0
+					},
+					{
+						"rva": 0,
+						"size": 0
+					}
+				]
+			}
+		},
+		"sectionHeaders": [
+			{
+				"name": ".text",
+				"visualSize": 3281,
+				"rva": 4096,
+				"sizeOfRawData": 3584,
+				"foa": 1024,
+				"characteristics": 1610612768
+			},
+			{
+				"name": ".rdata",
+				"visualSize": 2822,
+				"rva": 8192,
+				"sizeOfRawData": 3072,
+				"foa": 4608,
+				"characteristics": 1073741888
+			},
+			{
+				"name": ".data",
+				"visualSize": 904,
+				"rva": 12288,
+				"sizeOfRawData": 512,
+				"foa": 7680,
+				"characteristics": 3221225536
+			},
+			{
+				"name": ".rsrc",
+				"visualSize": 480,
+				"rva": 16384,
+				"sizeOfRawData": 512,
+				"foa": 8192,
+				"characteristics": 1073741888
+			},
+			{
+				"name": ".reloc",
+				"visualSize": 348,
+				"rva": 20480,
+				"sizeOfRawData": 512,
+				"foa": 8704,
+				"characteristics": 1107296320
+			}
+		]
+	},
+	"importTable": [
+		{
+			"INT": [
+				{
+					"data": {
+						"hint": 29,
+						"name": "__current_exception_context"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 28,
+						"name": "__current_exception"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 72,
+						"name": "memset"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 53,
+						"name": "_except_handler4_common"
+					},
+					"funcAddress": 0
+				}
+			],
+			"name": "VCRUNTIME140.dll",
+			"IAT": [
+				{
+					"data": {
+						"hint": 29,
+						"name": "__current_exception_context"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 28,
+						"name": "__current_exception"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 72,
+						"name": "memset"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 53,
+						"name": "_except_handler4_common"
+					},
+					"funcAddress": 0
+				}
+			]
+		},
+		{
+			"INT": [
+				{
+					"data": {
+						"hint": 3,
+						"name": "__stdio_common_vfprintf"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 0,
+						"name": "__acrt_iob_func"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 1,
+						"name": "__p__commode"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 84,
+						"name": "_set_fmode"
+					},
+					"funcAddress": 0
+				}
+			],
+			"name": "api-ms-win-crt-stdio-l1-1-0.dll",
+			"IAT": [
+				{
+					"data": {
+						"hint": 3,
+						"name": "__stdio_common_vfprintf"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 0,
+						"name": "__acrt_iob_func"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 1,
+						"name": "__p__commode"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 84,
+						"name": "_set_fmode"
+					},
+					"funcAddress": 0
+				}
+			]
+		},
+		{
+			"INT": [
+				{
+					"data": {
+						"hint": 22,
+						"name": "_c_exit"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 66,
+						"name": "_seh_filter_exe"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 54,
+						"name": "_initialize_onexit_table"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 23,
+						"name": "_cexit"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 31,
+						"name": "_crt_atexit"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 29,
+						"name": "_controlfp_s"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 106,
+						"name": "terminate"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 68,
+						"name": "_set_app_type"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 63,
+						"name": "_register_thread_local_exe_atexit_callback"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 6,
+						"name": "__p___argv"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 62,
+						"name": "_register_onexit_function"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 37,
+						"name": "_exit"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 88,
+						"name": "exit"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 57,
+						"name": "_initterm_e"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 56,
+						"name": "_initterm"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 42,
+						"name": "_get_initial_narrow_environment"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 53,
+						"name": "_initialize_narrow_environment"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 25,
+						"name": "_configure_narrow_argv"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 5,
+						"name": "__p___argc"
+					},
+					"funcAddress": 0
+				}
+			],
+			"name": "api-ms-win-crt-runtime-l1-1-0.dll",
+			"IAT": [
+				{
+					"data": {
+						"hint": 22,
+						"name": "_c_exit"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 66,
+						"name": "_seh_filter_exe"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 54,
+						"name": "_initialize_onexit_table"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 23,
+						"name": "_cexit"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 31,
+						"name": "_crt_atexit"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 29,
+						"name": "_controlfp_s"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 106,
+						"name": "terminate"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 68,
+						"name": "_set_app_type"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 63,
+						"name": "_register_thread_local_exe_atexit_callback"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 6,
+						"name": "__p___argv"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 62,
+						"name": "_register_onexit_function"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 37,
+						"name": "_exit"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 88,
+						"name": "exit"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 57,
+						"name": "_initterm_e"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 56,
+						"name": "_initterm"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 42,
+						"name": "_get_initial_narrow_environment"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 53,
+						"name": "_initialize_narrow_environment"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 25,
+						"name": "_configure_narrow_argv"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 5,
+						"name": "__p___argc"
+					},
+					"funcAddress": 0
+				}
+			]
+		},
+		{
+			"INT": [
+				{
+					"data": {
+						"hint": 46,
+						"name": "__setusermatherr"
+					},
+					"funcAddress": 0
+				}
+			],
+			"name": "api-ms-win-crt-math-l1-1-0.dll",
+			"IAT": [
+				{
+					"data": {
+						"hint": 46,
+						"name": "__setusermatherr"
+					},
+					"funcAddress": 0
+				}
+			]
+		},
+		{
+			"INT": [
+				{
+					"data": {
+						"hint": 8,
+						"name": "_configthreadlocale"
+					},
+					"funcAddress": 0
+				}
+			],
+			"name": "api-ms-win-crt-locale-l1-1-0.dll",
+			"IAT": [
+				{
+					"data": {
+						"hint": 8,
+						"name": "_configthreadlocale"
+					},
+					"funcAddress": 0
+				}
+			]
+		},
+		{
+			"INT": [
+				{
+					"data": {
+						"hint": 22,
+						"name": "_set_new_mode"
+					},
+					"funcAddress": 0
+				}
+			],
+			"name": "api-ms-win-crt-heap-l1-1-0.dll",
+			"IAT": [
+				{
+					"data": {
+						"hint": 22,
+						"name": "_set_new_mode"
+					},
+					"funcAddress": 0
+				}
+			]
+		},
+		{
+			"INT": [
+				{
+					"data": {
+						"hint": 748,
+						"name": "GetSystemTimeAsFileTime"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 1393,
+						"name": "SetUnhandledExceptionFilter"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 538,
+						"name": "GetCurrentProcess"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 1424,
+						"name": "TerminateProcess"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 905,
+						"name": "IsProcessorFeaturePresent"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 635,
+						"name": "GetModuleHandleW"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 898,
+						"name": "IsDebuggerPresent"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 870,
+						"name": "InitializeSListHead"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 1457,
+						"name": "UnhandledExceptionFilter"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 543,
+						"name": "GetCurrentThreadId"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 539,
+						"name": "GetCurrentProcessId"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 1103,
+						"name": "QueryPerformanceCounter"
+					},
+					"funcAddress": 0
+				}
+			],
+			"name": "KERNEL32.dll",
+			"IAT": [
+				{
+					"data": {
+						"hint": 748,
+						"name": "GetSystemTimeAsFileTime"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 1393,
+						"name": "SetUnhandledExceptionFilter"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 538,
+						"name": "GetCurrentProcess"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 1424,
+						"name": "TerminateProcess"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 905,
+						"name": "IsProcessorFeaturePresent"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 635,
+						"name": "GetModuleHandleW"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 898,
+						"name": "IsDebuggerPresent"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 870,
+						"name": "InitializeSListHead"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 1457,
+						"name": "UnhandledExceptionFilter"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 543,
+						"name": "GetCurrentThreadId"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 539,
+						"name": "GetCurrentProcessId"
+					},
+					"funcAddress": 0
+				},
+				{
+					"data": {
+						"hint": 1103,
+						"name": "QueryPerformanceCounter"
+					},
+					"funcAddress": 0
+				}
+			]
+		}
+	]
+}

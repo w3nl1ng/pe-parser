@@ -71,14 +71,21 @@ func (p *PE32) parseOptionalHeader() {
 	p.Header.PEHeader.OptionalHeader.SectionAlignment = sectionAlignment
 	p.Header.PEHeader.OptionalHeader.FileAlignment = fileAlignment
 	p.Header.PEHeader.OptionalHeader.SizeOfHeader = sizeOfHeader
+
+	p.parseDataDirectoryArray()
 }
 
 // parseDataDirectoryArray函数解析PE可选头中的数据目录数组
 func (p *PE32) parseDataDirectoryArray() {
 	p.Header.PEHeader.OptionalHeader.DataDirectoryArray = make([]*IMAGE_DATA_DIRECTORY, 16)
-
+	for i := 0; i < 16; i++ {
+		tempDataDirectory := &IMAGE_DATA_DIRECTORY{}
+		tempDataDirectory.Data = p.dword(p.Header.DosHeader.Lfanew + 4 + int32(IMAGE_SIZEOF_FILE_HEADER) + 96 + int32(i*8))
+		tempDataDirectory.Size = p.dword(p.Header.DosHeader.Lfanew + 4 + int32(IMAGE_SIZEOF_FILE_HEADER) + 96 + int32(i*8) + 4)
+		p.Header.PEHeader.OptionalHeader.DataDirectoryArray[i] = tempDataDirectory
+	}
 	//目前只解析导入函数表
-
+	p.ParseImportTable()
 }
 
 // parseSectionHeaders函数解析PE文件的节区表

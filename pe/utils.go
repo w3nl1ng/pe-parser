@@ -6,7 +6,7 @@ import (
 )
 
 // RAV2FOA函数将一个RVA转换为FOA
-func (pe *PE32) RAV2FOA(rva int32) int32 {
+func (pe *PE32) RVA2FOA(rva int32) int32 {
 	//如果rva落在文件头范围内，直接返回就可以
 	if rva <= pe.Header.PEHeader.OptionalHeader.SizeOfHeader {
 		return rva
